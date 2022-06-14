@@ -1,0 +1,97 @@
+
+body{
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sideBar{
+    height: 100%;
+    width: 85px;
+    position: fixed;
+    /* Stack order will be in front */
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 60px;
+    white-space: nowrap;
+}
+.sideBar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+}
+
+.sideBar a:hover{
+    color: #f1f1f1;
+    left: 0;
+
+}
+img{
+    height: 25px;
+}
+main .sideBar{
+    position: absolute;
+    top: 0;
+    right: 25;
+    margin-left: 50px;
+}
+#main{
+    padding: 16px;
+    margin-left: 85px;
+    transition: margin-left 0.5s;
+}
+
+.icon,
+.icon-text{
+    margin-right: 30px;
+    vertical-align: middle;
+}
+@media screen and (max-height:450px){
+    .sideBar{
+        padding-top: 15px;
+    }
+    .sideBar a{
+        font-size: 18px;
+    }
+}
+.cover-art{
+    position: relative;
+    left: +450px;
+    bottom: -50px;
+    width: 350px;
+    height: 600px;
+    background-color: black;
+    
+   
+}
+
+.comments{
+    position: relative;
+    display: block;
+    right: -850px;
+    bottom: -50px;
+    background-color: white;
+    height: 600px;
+    width: 450px;
+
+
+}
+
+.players{
+    position: relative;
+    
+    background-color: black;
+    width: 80%;
+    height: 400px;
+    bottom: -750px;
+    left: -150px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+}
