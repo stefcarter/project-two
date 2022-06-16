@@ -1,13 +1,15 @@
 //Hovering Sidebar code below
 var miniIcon =true;
 
-document.getElementbyId("pageSidebar").addEventlistner("mouseover",mouseOver);
-document.getElementbyId("pageSidebar").addEventlistner("mouseout", mouseOut);
+document.getElementbyId("sideBar").addEventlistner("mouseover",mouseOver);
+document.getElementbyId("sideBar").addEventlistner("mouseout", mouseOut);
 
 function hoverOnSidebar(){
-    document.getElementById("pageSidebar").style.width ="250px";
+    document.getElementById("sideBar").style.width ="15%";
 }
 
 function hoverOffSiderbar(){
-    document.getElementById("pageSidebar").style.width ="85px";
+    document.getElementById("sideBar").style.width ="4%";
 }
+
+
