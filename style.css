@@ -8,14 +8,15 @@ body{
 .sideBar{
     height: 100%;
     width: 85px;
-    position: fixed;
+    position: absolute;
     /* Stack order will be in front */
-    z-index: 1; 
+    z-index: 1000; 
     top: 0;
     left: 0;
+    bottom: 0;
     background-color: #111;
-    transition: 0.5s;
-    overflow-x: hidden;
+    transition: width 0.5s linear;
+    overflow: hidden;
     padding-top: 60px;
     white-space: nowrap;
 }
@@ -46,7 +47,13 @@ main .sideBar{
     margin-left: 85px;
     transition: margin-left 0.5s;
 }
-
+.no-touch .scrollable.hover {
+    overflow-y: hidden;
+  }
+  a:hover,
+a:focus {
+  text-decoration: none;
+}
 .icon,
 .icon-text{
     margin-right: 30px;
@@ -58,6 +65,10 @@ main .sideBar{
     }
     .sideBar a{
         font-size: 18px;
+    }
+    .players{
+        position: relative;
+        width: 45%;
     }
 }
 .cover-art{
@@ -85,12 +96,11 @@ main .sideBar{
 
 .players{
     position: relative;
-    
     background-color: black;
-    width: 80%;
+    width: 90%;
     height: 400px;
     bottom: -750px;
-    left: -150px;
+    left: -15px;
     display: flex;
     align-content: space-around;
     justify-content: space-between;
