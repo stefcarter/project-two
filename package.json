@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "",
-    "start": "",
-    "seed": ""
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
   },
 
   "author": "",
