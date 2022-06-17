@@ -1,4 +1,16 @@
 {
+  "name": "gamer_db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "",
+    "seed": ""
+  },
+
+  "author": "",
+  "license": "",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
