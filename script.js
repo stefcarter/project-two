@@ -11,3 +11,11 @@ function hoverOnSidebar(){
 function hoverOffSiderbar(){
     document.getElementById("pageSidebar").style.width ="85px";
 }
+
+
+let requestUrl = "https://rawg.io/?s=" + title + "&bbea3bbc5e864e008180ff31ade66e0d";
+    //perform an API Call to request and return JSON data from RAWG
+    fetch(requestUrl)
+        .then(function(response) {
+            return response.json();
+        })
