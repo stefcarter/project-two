@@ -8,8 +8,7 @@ const helpers = require('./utils/helpers')
 const session = require('express-session')
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
 const hbs = exphbs.create({ helpers });
-const session = require('express-session')
-const hbs = require('express-handlebars');
+// const hbs = require('express-handlebars');
 
 
 
@@ -27,21 +26,7 @@ const sess = {
     })
   };
 
-
-
-const sess = {
-    secret: 'Batcave level of secret',
-    resave: false,
-    saveUninitialized: true,
-  };
-
-
 app.use(session(sess));
-
-
-
-
-
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
