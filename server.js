@@ -3,22 +3,32 @@ const express = require('express');
 const routes = require('./controllers');
 const sequelize = require('./config/connections');
 const exphbs = require('express-handlebars');
+// const { Sequelize } = require('sequelize/types');
+const helpers = require('./utils/helpers')
+const session = require('express-session')
+const SequelizeStore = require('connect-session-sequelize')(session.Store)
+const hbs = exphbs.create({ helpers });
+
 
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// const sess = {
-//     secret: 'Batcave level of secret',
-//     resave: false,
-//     saveUninitialized: true,
-//   };
+const sess = {
+    secret: 'Batcave level of secret',
+    cookie: { maxAge: 36000},
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize
+    })
+  };
 
-// app.use(session(sess));
+app.use(session(sess));
 
-// const hbs = exphbs.create({ helpers })
 
-// app.engine('handlebars', hbs.engine);
+
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
