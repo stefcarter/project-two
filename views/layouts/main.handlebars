@@ -1,12 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main layout</title>
+    <title>main</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/style.css">
 </head>
+
 <body>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            {{!-- <h5 class="card-title">Log in page </h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"></span>
+                <input type="text" class="form-control" placeholder="email" aria-label="email"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">...</span>
+                <input type="text" class="form-control" placeholder="passwword" aria-label="passwword"
+                    aria-describedby="basic-addon1">
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg">login</button>
+
+            <button type="button" class="btn btn-primary btn-lg">create account</button>
+        </div> --}}
+        <header>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>mdo</strong>
+                </a>
+                <!-- Dark Mode -->
+                <!-- Search Icon -->
+                <!-- Vertical Elipses (Click): About, The Team -->
+        </header>
+        <!-- User,Homepage,Twitch,Youtube -->
+        <div id="pageSidebar">
+            <div class="sideBar">
+                <div class="link-hover"><a href="#"><img class="icon" src="./Images/user.png"><span
+                            class="icon-text"></span></a>
+                    <ul>
+                        <li> <a>random</a></li>
+                    </ul>
+                </div>
+                <div class="link-hover" id="home"><a href="#"><img class="icon" src="./Images/home.png"><span
+                            class="icon-text"></span></a>
+                    <ul>
+                        <li> <a>random</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-hover"><a href="#"><img class="icon" src="./Images/twitch.png"><span
+                            class="icon-text"></span></a>
+                    <ul>
+                        <li> <a>random</a></li>
+                    </ul>
+                </div>
+                <div class="link-hover"><a href="#"><img class="icon" src="./Images/youtube.png"><span
+                            class="icon-text"></span></a>
+
+                    <ul>
+                        <li> <a>Youtube</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-hover"><a href="#"><img class="icon" src="./Images/video-game.png"><span
+                            class="icon-text"></span></a>
+                    <ul>
+                        <li> <a>Games</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
     {{{ body }}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
