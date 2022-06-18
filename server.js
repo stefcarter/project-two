@@ -8,8 +8,7 @@ const helpers = require('./utils/helpers')
 const session = require('express-session')
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
 const hbs = exphbs.create({ helpers });
-const session = require('express-session')
-const hbs = require('express-handlebars');
+
 
 
 // for new push
