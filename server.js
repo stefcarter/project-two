@@ -18,13 +18,13 @@ const PORT = process.env.PORT || 3001;
 
 const sess = {
     secret: 'Batcave level of secret',
-    cookie: { maxAge: 36000},
+    cookie: { maxAge: 36000 },
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
         db: sequelize
     })
-  };
+};
 
 
 
