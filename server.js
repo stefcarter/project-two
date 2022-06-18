@@ -17,7 +17,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 
-const sess = {
+const session = {
     secret: 'Batcave level of secret',
     cookie: { maxAge: 36000},
     resave: false,
