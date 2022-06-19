@@ -122,7 +122,7 @@ main .sideBar {
     left: 0;
     top: 0;
     height: 100%;
-    background: #fff;
+    background: wheat;
     border-right: 1px solid #ddd;
 }
 
@@ -176,4 +176,13 @@ main .sideBar {
 #pageSidebar .sideBar a:active {
     background: #00ff00;
 }
+
+.search-bar{
+position: relative;
+top: 0px;
+height: 45px;
+left: 45%;
+
+}
+
 
