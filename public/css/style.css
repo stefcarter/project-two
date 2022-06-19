@@ -29,15 +29,9 @@ ul {
     left: 0;
     bottom: 0;
     background-color: #111;
-<<<<<<< HEAD:style.css
-    transition: width 0.5s linear;
-    overflow: hidden;
-    padding-top: 60px;
-=======
     transition: 1ms;
     overflow-x: hidden;
     padding-top: 5px;
->>>>>>> 0eb99a1dc94e3845f663611f48e5fe7567859500:public/css/style.css
     white-space: nowrap;
     width: 70px;
 }
@@ -83,7 +77,6 @@ a:focus {
 .icon-text {
     margin-right: 30px;
     vertical-align: middle;
-    height: 27px;
 }
 
 @media screen and (max-height:450px) {
@@ -124,17 +117,10 @@ a:focus {
 .players {
     position: relative;
     background-color: black;
-<<<<<<< HEAD:style.css
-    width: 90%;
-    height: 400px;
-    bottom: -750px;
-    left: -15px;
-=======
     width: 300px;
     height: 310px;
     bottom: -75px;
     left: -50px;
->>>>>>> 0eb99a1dc94e3845f663611f48e5fe7567859500:public/css/style.css
     display: flex;
     align-content: space-around;
     justify-content: space-between;
@@ -181,11 +167,7 @@ a:focus {
     overflow: hidden;
     z-index: 100;
     width: 100px;
-<<<<<<< HEAD:style.css
-    transition: .5s all;
-=======
     transition: 0.5s all;
->>>>>>> 0eb99a1dc94e3845f663611f48e5fe7567859500:public/css/style.css
     background-color: green;
 }
 
