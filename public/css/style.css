@@ -9,18 +9,16 @@ ul {
     list-style-type: none;
     padding:0;
     text-align: start;
+    display: block;
 }
 
 .alignC {
-    /* position: relative;
-    left: 15%; */
-    /* text-align: center; */
-    position:    absolute;
-    left:        50%;
-    top:         5%;
-    height:      100px;
+    position: absolute;
+    left: 45%;
+    top: 5%;
+    height: 100px;
     margin-left: -500px;
-    margin-top:  -50px;
+    margin-top: -50px;
 }
 
 .sideBar {
@@ -72,6 +70,7 @@ main .sideBar {
 .icon-text {
     margin-right: 30px;
     vertical-align: middle;
+    height: 27px;
 }
 
 @media screen and (max-height:450px) {
@@ -92,6 +91,7 @@ main .sideBar {
     width: 350px;
     height: 600px;
     background-color: black;
+    border-radius: 5%;
 }
 
 .comments {
@@ -101,16 +101,15 @@ main .sideBar {
     background-color: white;
     height: 600px;
     width: 450px;
-
-
+    border-radius: 5%;
 }
 
 .players {
     position: relative;
     background-color: black;
-    width: 80%;
-    height: 400px;
-    bottom: -100px;
+    width: 300px;
+    height: 310px;
+    bottom: -75px;
     left: -50px;
     display: flex;
     align-content: space-around;
@@ -149,7 +148,6 @@ main .sideBar {
 
 #pageSidebar .sideBar a {
     display: inline-block;
-
 }
 
 
@@ -159,18 +157,15 @@ main .sideBar {
     overflow: hidden;
     z-index: 100;
     width: 100px;
-    transition: 1.5s all;
+    transition: 0.5s all;
     background-color: green;
-    
-
-
 }
 
 .link-hover:hover ul {
     display: block;
     width: 150px;
     height: 50px;
-    max-height: 300px;
+    max-height: 150px;
 }
 
 #pageSidebar .sideBar a:active,
@@ -187,10 +182,12 @@ main .sideBar {
 }
 
 .search-bar{
-position: relative;
-top: 0px;
-height: 45px;
-left: 70%;
+    position: relative;
+    top: 5px;
+    height: 40px;
+    left: 70%;
+    background: black;
+    border-radius: 5%;
 }
 
 
