@@ -185,4 +185,18 @@ left: 45%;
 
 }
 
+.container-lg{
+background-color: #818181;
+height: 420px;
+width: 690px;
+position: relative;
+top: 110px;
+left: -35px;
+}
+
+#avatar-img{
+    width: auto;
+    height: auto;
+
+}
 
