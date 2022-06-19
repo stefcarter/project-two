@@ -7,15 +7,8 @@ body {
 
 .sideBar {
     height: 100%;
-<<<<<<< HEAD
-    width: 85px;
-    position: absolute;
-    /* Stack order will be in front */
-    z-index: 1000; 
-=======
     position: fixed;
     z-index: 1;
->>>>>>> e47df205594639638f0a6ce5dbae3a5a0115e69b
     top: 0;
     left: 0;
     bottom: 0;
@@ -108,10 +101,6 @@ a:focus {
 
 .players {
     position: relative;
-<<<<<<< HEAD
-=======
-
->>>>>>> e47df205594639638f0a6ce5dbae3a5a0115e69b
     background-color: black;
     width: 90%;
     height: 400px;
@@ -164,14 +153,17 @@ a:focus {
     overflow: hidden;
     z-index: 100;
     width: 100px;
-    transition: 1.5s all;
+    transition: .5s all;
     background-color: green;
-    
-
-
 }
 
 .link-hover:hover ul {
+    display: block;
+    width: 150px;
+    height: 50px;
+    max-height: 300px;
+}
+.link-hover:hover p {
     display: block;
     width: 150px;
     height: 50px;
