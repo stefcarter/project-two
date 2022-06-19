@@ -1,8 +1,24 @@
 body {
-    background-color: #121212;
+    background-color: #4d0303;
     display: flex;
     flex-direction: row;
     font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style-type: none;
+    padding:0;
+    text-align: start;
+    display: block;
+}
+
+.alignC {
+    position: absolute;
+    left: 45%;
+    top: 5%;
+    height: 100px;
+    margin-left: -500px;
+    margin-top: -50px;
 }
 
 .sideBar {
@@ -13,10 +29,17 @@ body {
     left: 0;
     bottom: 0;
     background-color: #111;
+<<<<<<< HEAD:style.css
     transition: width 0.5s linear;
     overflow: hidden;
     padding-top: 60px;
+=======
+    transition: 1ms;
+    overflow-x: hidden;
+    padding-top: 5px;
+>>>>>>> 0eb99a1dc94e3845f663611f48e5fe7567859500:public/css/style.css
     white-space: nowrap;
+    width: 70px;
 }
 
 .sideBar a {
@@ -30,7 +53,7 @@ body {
 .sideBar a:hover {
     color: #f1f1f1;
     left: 0;
-
+    width: 100%;
 }
 
 img {
@@ -60,6 +83,7 @@ a:focus {
 .icon-text {
     margin-right: 30px;
     vertical-align: middle;
+    height: 27px;
 }
 
 @media screen and (max-height:450px) {
@@ -78,34 +102,39 @@ a:focus {
 
 .cover-art {
     position: relative;
-    left: +450px;
+    top: 100px;
+    left: -150px;
     bottom: -50px;
     width: 350px;
     height: 600px;
     background-color: black;
-
-
+    border-radius: 5%;
 }
 
 .comments {
     position: relative;
     display: block;
-    right: -850px;
-    bottom: -50px;
+    right: -550px;
     background-color: white;
     height: 600px;
     width: 450px;
-
-
+    border-radius: 5%;
 }
 
 .players {
     position: relative;
     background-color: black;
+<<<<<<< HEAD:style.css
     width: 90%;
     height: 400px;
     bottom: -750px;
     left: -15px;
+=======
+    width: 300px;
+    height: 310px;
+    bottom: -75px;
+    left: -50px;
+>>>>>>> 0eb99a1dc94e3845f663611f48e5fe7567859500:public/css/style.css
     display: flex;
     align-content: space-around;
     justify-content: space-between;
@@ -125,7 +154,7 @@ a:focus {
     left: 0;
     top: 0;
     height: 100%;
-    background: #fff;
+    background: wheat;
     border-right: 1px solid #ddd;
 }
 
@@ -143,7 +172,6 @@ a:focus {
 
 #pageSidebar .sideBar a {
     display: inline-block;
-
 }
 
 
@@ -153,7 +181,11 @@ a:focus {
     overflow: hidden;
     z-index: 100;
     width: 100px;
+<<<<<<< HEAD:style.css
     transition: .5s all;
+=======
+    transition: 0.5s all;
+>>>>>>> 0eb99a1dc94e3845f663611f48e5fe7567859500:public/css/style.css
     background-color: green;
 }
 
@@ -161,7 +193,7 @@ a:focus {
     display: block;
     width: 150px;
     height: 50px;
-    max-height: 300px;
+    max-height: 150px;
 }
 .link-hover:hover p {
     display: block;
@@ -182,4 +214,14 @@ a:focus {
 #pageSidebar .sideBar a:active {
     background: #00ff00;
 }
+
+.search-bar{
+    position: relative;
+    top: 5px;
+    height: 40px;
+    left: 70%;
+    background: black;
+    border-radius: 5%;
+}
+
 

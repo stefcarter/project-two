@@ -36,7 +36,7 @@ router.post('/login', async (req, res) => {
         }
         res.status(200).json({ message: 'You have made it past the bridge troll!' });
     } catch (err) {
-        res.status(500).json(err);
+        res.status(500).json({ message: 'No one here but us chickens.'});
     }
 });
 
