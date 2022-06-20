@@ -35,5 +35,15 @@ router.get('/user', async (req, res) => {
     }
 });
 
+router.get('/home', async (req, res) => {
+    try {
+        let homePage = await User.findAll({
+        });
+        res.render('home', { homePage });
+    } catch (error) {
+        res.status(404).send("you're beat!!")
+    }
+});
+
 
 module.exports = router;

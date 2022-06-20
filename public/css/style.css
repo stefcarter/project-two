@@ -242,3 +242,15 @@ a:focus {
         box-shadow: 8px 7px 8px 2px #000000;
         margin-top: 5px;
 }
+.title{
+    font-family: 'Alike Angular', serif;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 35px;
+    color: #ddd;
+    position:absolute;
+        left: -218px;
+}
+#title-icon{
+    height: 45px;
+   
+}

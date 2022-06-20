@@ -1,6 +1,10 @@
 <head>
     <meta charset="UTF-8">
     <title>main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alike+Angular&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -8,6 +12,7 @@
 </head>
 
 <body>
+    <div class="title"> Gamer <span><img id="title-icon" src="./Images/joystick.png"></span> Database </div>
     <div class="search-bar">
         <div class="input-group mb-3">
             <button class="btn btn-outline-secondary" type="button" id="button-addon1"><img class="icon"
@@ -17,96 +22,62 @@
         </div>
     </div>
 
-
-    {{!-- move search bar around --}}
-    
-    {{!-- <div class="card" style="width: 18rem;"> --}}
-        {{!-- <div class="card-body"> --}}
-            {{!-- <h5 class="card-title">Log in page </h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1"></span>
-                <input type="text" class="form-control" placeholder="email" aria-label="email"
-                    aria-describedby="basic-addon1">
+    <!-- User,Homepage,Twitch,Youtube -->
+    <div id="pageSidebar">
+        <div class="sideBar">
+            <div class="link-hover"><a href="#"><img class="icon" src="./Images/user.png"><span
+                        class="icon-text"></span></a>
+                <ul>
+                    <li><a href="../user">User</a></li>
+                    {{!--
+                </ul>
+                <ul> --}}
+                    <li><a href="../login">Login</a></li>
+                </ul>
             </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">...</span>
-                <input type="text" class="form-control" placeholder="passwword" aria-label="passwword"
-                    aria-describedby="basic-addon1">
+            <div class="link-hover" id="home"><a href="#"><img class="icon" src="./Images/home.png"><span
+                        class="icon-text"></span></a>
+                <ul>
+                    <li><a>random</a></li>
+                </ul>
             </div>
 
-            <button type="button" class="btn btn-primary btn-lg">login</button>
-
-            <button type="button" class="btn btn-primary btn-lg">create account</button>
-        </div> --}}
-        {{!-- <header> --}}
-            {{!-- <div class="dropdown">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                
-                    
-                </a> --}}
-                <!-- Dark Mode -->
-                <!-- Search Icon -->
-                <!-- Vertical Elipses (Click): About, The Team -->
-        {{!-- </header> --}}
-
-        <!-- User,Homepage,Twitch,Youtube -->
-        <div id="pageSidebar">
-            <div class="sideBar">
-                <div class="link-hover"><a href="#"><img class="icon" src="./Images/user.png"><span
-                            class="icon-text"></span></a>
-                    <ul>
-                        <li><a href="../user">User</a></li>
-                    {{!-- </ul>
-                    <ul> --}}
-                        <li><a href="../login">Login</a></li>
-                    </ul>
-                </div>
-                <div class="link-hover" id="home"><a href="#"><img class="icon" src="./Images/home.png"><span
-                            class="icon-text"></span></a>
-                    <ul>
-                        <li><a>random</a></li>
-                    </ul>
-                </div>
-
-                <div class="link-hover"><a href="#"><img class="icon" src="./Images/twitch.png"><span
-                            class="icon-text"></span></a>
-                    <ul>
-                        <li> <a>random</a></li>
-                    </ul>
-                </div>
-                <div class="link-hover"><a href="#"><img class="icon" src="./Images/youtube.png"><span
-                            class="icon-text"></span></a>
-
-                    <ul>
-                        <li> <a>Youtube</a></li>
-                    </ul>
-                </div>
-
-                <div class="link-hover"><a href="#"><img class="icon" src="./Images/video-game.png"><span
-                            class="icon-text"></span></a>
-                    <ul>
-                        <li> <a>Games</a></li>
-                    </ul>
-
-                </div>
-               
-               <div class="powerLog"><a href="#" alt="Logout"><img class="icon" src="./Images/power-button.png"><span
-                            class="icon-text"></span></a>
-                </div>
-               
-                
+            <div class="link-hover"><a href="#"><img class="icon" src="./Images/twitch.png"><span
+                        class="icon-text"></span></a>
+                <ul>
+                    <li> <a>random</a></li>
+                </ul>
             </div>
+            <div class="link-hover"><a href="#"><img class="icon" src="./Images/youtube.png"><span
+                        class="icon-text"></span></a>
+
+                <ul>
+                    <li> <a>Youtube</a></li>
+                </ul>
+            </div>
+
+            <div class="link-hover"><a href="#"><img class="icon" src="./Images/video-game.png"><span
+                        class="icon-text"></span></a>
+                <ul>
+                    <li> <a>Games</a></li>
+                </ul>
+
+            </div>
+
+            <div class="powerLog"><a href="#" alt="Logout"><img class="icon" src="./Images/power-button.png"><span
+                        class="icon-text"></span></a>
+            </div>
+
+
         </div>
+    </div>
     {{!-- </div> --}}
     {{{ body }}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    {{!-- <script src="/js/script.js"></script> --}}
+    {{!--
+    <script src="/js/script.js"></script> --}}
 </body>
 
 </html>
