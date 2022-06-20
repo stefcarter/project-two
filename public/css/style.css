@@ -204,10 +204,6 @@ a:focus {
 
 .search-bar{
     position: relative;
-    top: 0px;
-    height: 45px;
-    left: 45%;
-    position: relative;
     top: 5px;
     height: 40px;
     left: 70%;
