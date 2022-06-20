@@ -17,7 +17,7 @@ ul {
     left: 45%;
     top: 5%;
     height: 100px;
-    margin-left: -500px;
+    margin-left: -700px;
     margin-top: -50px;
 }
 
@@ -94,14 +94,14 @@ a:focus {
 }
 
 .powerLog {
-    position: relative;
-    margin-top: 430px;
+    position: fixed;
+    margin-top: 65%;
 }
 
 .cover-art {
     position: relative;
     top: 100px;
-    left: -150px;
+    left: -40px;
     bottom: -50px;
     width: 350px;
     height: 600px;
@@ -112,11 +112,12 @@ a:focus {
 .comments {
     position: relative;
     display: block;
-    right: -550px;
+    right: -250px;
     background-color: white;
     height: 600px;
     width: 450px;
     border-radius: 5%;
+    top: 100px;
 }
 
 .players {
@@ -124,8 +125,8 @@ a:focus {
     background-color: black;
     width: 300px;
     height: 310px;
-    bottom: -75px;
-    left: -50px;
+    bottom: -800px;
+    left: -850px;
     display: flex;
     align-content: space-around;
     justify-content: space-between;
@@ -202,7 +203,7 @@ a:focus {
     background: #00ff00;
 }
 
-.search-bar{
+.search-bar {
     position: relative;
     top: 5px;
     height: 40px;
@@ -223,7 +224,6 @@ width: 690px;
 position: relative;
 top: 110px;
 right: -35px;
-
 }
 
 #avatar-img{
