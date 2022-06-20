@@ -50,9 +50,9 @@ ul {
     width: 100%;
 }
 
-img {
+/* img {
     height: 25px;
-}
+} */
 
 main .sideBar {
     position: absolute;
@@ -77,6 +77,7 @@ a:focus {
 .icon-text {
     margin-right: 30px;
     vertical-align: middle;
+    height: 25px;
 }
 
 @media screen and (max-height:450px) {
@@ -169,12 +170,6 @@ a:focus {
     width: 100px;
     transition: 0.5s all;
     background-color: green;
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> a0cd06bb44c0e78faab7ebc05227f717ac81d917
 }
 
 .link-hover:hover ul {
@@ -203,13 +198,8 @@ a:focus {
     background: #00ff00;
 }
 
-<<<<<<< HEAD
-.search-bar {
-    position: relative;
-    top: 0px;
-    height: 45px;
-    left: 45%;
-=======
+
+
 .search-bar{
     position: relative;
     top: 5px;
@@ -217,7 +207,9 @@ a:focus {
     left: 70%;
     background: black;
     border-radius: 5%;
->>>>>>> a0cd06bb44c0e78faab7ebc05227f717ac81d917
+
+
+
 }
 
 .container-lg {
@@ -226,7 +218,7 @@ a:focus {
     width: 690px;
     position: relative;
     top: 110px;
-    left: -35px;
+    left: 10px;
     -webkit-box-shadow: 8px 7px 8px 2px #000000;
     box-shadow: 8px 7px 8px 2px #000000;
 
