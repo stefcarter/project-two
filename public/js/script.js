@@ -12,8 +12,10 @@ function hoverOffSiderbar(){
     document.getElementById("pageSidebar").style.width ="85px";
 }
 
-    let requestUrl = "https://rawg.io/@csareyj/apikey=bbea3bbc5e864e008180ff31ade66e0d";
+//guid = game id??
+    let requestUrl = "https://www.giantbomb.com/api/review/[guid]/?api_key=0f72464a2a563dabc8eda47f92f607713cfee4c3";
     fetch(requestUrl)
         .then(function(response) {
             return response.json();
         })
+    
