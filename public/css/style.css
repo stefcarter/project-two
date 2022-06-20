@@ -93,6 +93,11 @@ a:focus {
     }
 }
 
+.powerLog {
+    position: relative;
+    margin-top: 430px;
+}
+
 .cover-art {
     position: relative;
     top: 100px;
@@ -206,4 +211,21 @@ a:focus {
     border-radius: 5%;
 }
 
+.container-lg{
+background-color: #818181;
+height: 450px;
+width: 690px;
+position: relative;
+top: 110px;
+left: -35px;
+
+}
+
+#avatar-img{
+    width: 240px;
+    height: 240px;
+    border-radius: 105px;
+
+
+}
 
