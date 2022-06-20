@@ -209,6 +209,11 @@ a:focus {
     left: 70%;
     background: black;
     border-radius: 5%;
+    left: 1200px;
+}
+#button-addon1{
+    width: 50px;
+    background-color: #121212;
 }
 
 .container-lg{
@@ -217,7 +222,7 @@ height: 450px;
 width: 690px;
 position: relative;
 top: 110px;
-left: -35px;
+right: -35px;
 
 }
 
@@ -225,7 +230,5 @@ left: -35px;
     width: 240px;
     height: 240px;
     border-radius: 105px;
-
-
 }
 
