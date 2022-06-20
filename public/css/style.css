@@ -198,12 +198,36 @@ a:focus {
 }
 
 .search-bar{
+
+position: relative;
+top: 0px;
+height: 45px;
+left: 45%;
+
     position: relative;
     top: 5px;
     height: 40px;
     left: 70%;
     background: black;
     border-radius: 5%;
+
 }
 
+.container-lg{
+background-color: #818181;
+height: 450px;
+width: 690px;
+position: relative;
+top: 110px;
+left: -35px;
+
+}
+
+#avatar-img{
+    width: 240px;
+    height: 240px;
+    border-radius: 105px;
+
+
+}
 

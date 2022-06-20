@@ -31,7 +31,7 @@ router.get('/user', async (req, res) => {
         });
         res.render('user', { profilePage });
     } catch (error) {
-        res.status(404).send("Almost there!")
+        res.status(404).send("you're beat!!")
     }
 });
 
