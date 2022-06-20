@@ -94,6 +94,11 @@ a:focus {
     }
 }
 
+.powerLog {
+    position: relative;
+    margin-top: 430px;
+}
+
 .cover-art {
     position: relative;
     top: 100px;
@@ -207,10 +212,10 @@ a:focus {
     left: 70%;
     background: black;
     border-radius: 5%;
-
-
-
 }
+
+
+
 
 .container-lg {
     background-color: #818181;
