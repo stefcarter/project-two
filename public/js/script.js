@@ -42,16 +42,16 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
     listImg.setAttribute('src', data[i].box_art);
     console.log(data[i].box_art);
     listImg.setAttribute('alt', "title");
-    // listText.appendChild('name', data[i].game_name);
+    
     listText.textContent = data[i].game_name;
     listItem.appendChild(listImg);
     listItem.appendChild(listText)
     
     console.log(data[i].game_name)
-    // listItem.appendChild(listText);
+   
     repoList.appendChild(listItem);
   }
-  // console.log(data)
+  
 });
 }
 fetchButton.addEventListener('click', apiGet);
