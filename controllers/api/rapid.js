@@ -1,4 +1,4 @@
-
+var newSearch = document.querySelector('#test');
 const options = {
 	method: 'GET',
 	headers: {
@@ -8,7 +8,7 @@ const options = {
 };
 
 function apiGet(){
-fetch('https://whatoplay.p.rapidapi.com/search?game=Dota', options)
+fetch('https://whatoplay.p.rapidapi.com/search?game=' + newSearch.value + '' , options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
