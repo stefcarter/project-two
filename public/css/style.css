@@ -109,6 +109,12 @@ a:focus {
     border-radius: 5%;
 }
 
+.artSty {
+    width: auto;  
+text-align: center;  
+padding: 15px;  
+}
+
 .comments {
     position: relative;
     display: block;

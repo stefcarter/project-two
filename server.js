@@ -9,7 +9,8 @@ const session = require('express-session')
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
 const hbs = exphbs.create({ helpers });
 
-
+const apps = express();
+apps.use('/js', express.static(__dirname + './../public/js'));
 
 // for new push
 const app = express();
