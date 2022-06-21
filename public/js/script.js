@@ -1,18 +1,6 @@
 //Hovering Sidebar code below
 // var miniIcon =true;
 
-<<<<<<< HEAD
-document.getElementbyId("pageSidebar").addEventlistner("mouseover",mouseOver);
-document.getElementbyId("pageSidebar").addEventlistner("mouseout", mouseOut);
-
-function hoverOnSidebar(){
-    document.getElementById("pageSidebar").style.width ="250px";
-}
-
-function hoverOffSiderbar(){
-    document.getElementById("pageSidebar").style.width ="85px";
-}
-=======
 // document.getElementbyId("sideBar").addEventlistner("mouseover",mouseOver);
 // document.getElementbyId("sideBar").addEventlistner("mouseout", mouseOut);
 
@@ -23,17 +11,7 @@ function hoverOffSiderbar(){
 // function hoverOffSiderbar(){
 //     document.getElementById("sideBar").style.width ="4%";
 // }
->>>>>>> f944d1adebb548b06c3b6dcebd3d7161d6caad05
 
-<<<<<<< HEAD
-//guid = game id??
-    let requestUrl = "https://www.giantbomb.com/api/review/[guid]/?api_key=0f72464a2a563dabc8eda47f92f607713cfee4c3";
-    fetch(requestUrl)
-        .then(function(response) {
-            return response.json();
-        })
-    
-=======
 // API for cover art
 var repoList = document.querySelector('#coverArt');
 var fetchButton = document.querySelector('.fetch-button');
@@ -63,4 +41,3 @@ function getApi() {
       });
   }
   fetchButton.addEventListener('click', getApi);
->>>>>>> fc248fc7203f0ef5bb3dd0de2a0db4223e757228
