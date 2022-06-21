@@ -47,7 +47,7 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
     listItem.appendChild(listImg);
     listItem.appendChild(listText)
     
-    console.log(data[i].game_name)
+    console.log(data[i].game_name);
    
     repoList.appendChild(listItem);
   }
