@@ -1,16 +1,3 @@
-//Hovering Sidebar code below
-// var miniIcon =true;
-
-// document.getElementbyId("sideBar").addEventlistner("mouseover",mouseOver);
-// document.getElementbyId("sideBar").addEventlistner("mouseout", mouseOut);
-
-// function hoverOnSidebar(){
-//     document.getElementById("sideBar").style.width ="15%";
-// }
-
-// function hoverOffSiderbar(){
-//     document.getElementById("sideBar").style.width ="4%";
-// }
 
 // API for cover art
 var repoList = document.querySelector('#coverArt');
@@ -33,19 +20,25 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
 })
 .then(function (data) {
   repoList.innerHTML = ''
-  for (var i = 0; i < 1; i++) {
+  for (var i = 0; i < 5; i++) {
     var listItem = document.createElement('li');
     var listImg = document.createElement('img');
-    // var listText = document.createElement('p');
-    listImg.setAttribute('src', data[i].box_art);
-    listImg.setAttribute('alt', "title");
+    
+    var listText = document.createElement('p');
 
+    listImg.setAttribute('src', data[i].box_art);
+    console.log(data[i].box_art);
+    listImg.setAttribute('alt', "title");
+    
+    listText.textContent = data[i].game_name;
     listItem.appendChild(listImg);
-    // listText.textContent = data.data[i].title;
-    // listItem.appendChild(listText);
+    listItem.appendChild(listText)
+    
+    console.log(data[i].game_name);
+   
     repoList.appendChild(listItem);
   }
-  // console.log(data)
+  
 });
 }
 fetchButton.addEventListener('click', apiGet);
