@@ -1,5 +1,5 @@
 body {
-    background-color: #4d0303;
+    background-color: #614d8f;
     display: flex;
     flex-direction: row;
     font-family: 'Times New Roman', Times, serif;
@@ -29,11 +29,11 @@ ul {
     left: 0;
     bottom: 0;
     background-color: #111;
-    transition: 1ms;
+    transition: 10ms;
     overflow-x: hidden;
     padding-top: 5px;
     white-space: nowrap;
-    width: 70px;
+    width: 75px;
 }
 
 .sideBar a {
@@ -73,10 +73,17 @@ main .sideBar {
 a:focus {
   text-decoration: none;
 }
+.icon-text{
+    display:center;
+    color: black;
+}
 .icon,
 .icon-text {
-    margin-right: 30px;
-    vertical-align: middle;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    right: 5px;
+    /* vertical-align: middle; */
 }
 
 @media screen and (max-height:450px) {
@@ -91,11 +98,15 @@ a:focus {
         position: relative;
         width: 45%;
     }
+    .search-bar{
+        position: fixed;
+    }
 }
 
 .powerLog {
-    position: fixed;
-    margin-top: 65%;
+    top: 1000px;
+    /* position: fixed; */
+    margin-top: 545%;
 }
 
 .cover-art {
@@ -162,7 +173,7 @@ padding: 15px;
 }
 
 #pageSidebar .sideBar a {
-    color: wheat;
+    color: black;
     display: flex;
     padding: 20px;
     text-decoration: none;
@@ -180,7 +191,8 @@ padding: 15px;
     z-index: 100;
     width: 100px;
     transition: 0.5s all;
-    background-color: green;
+    background-color: #93d3fb;
+    color: black;
 }
 
 .link-hover:hover ul {
@@ -199,7 +211,6 @@ padding: 15px;
 #pageSidebar .sideBar a:active,
 #pageSidebar .sideBar a:hover {
     text-decoration: none;
-    background: #4caf50;
     color: black;
     display: flex;
     flex-direction: row;
@@ -207,6 +218,7 @@ padding: 15px;
 
 #pageSidebar .sideBar a:active {
     background: #00ff00;
+    color: black;
 }
 
 .search-bar {
@@ -216,7 +228,10 @@ padding: 15px;
     left: 70%;
     background: black;
     border-radius: 5%;
-    left: 1200px;
+    left: 1250px;
+}
+@media screen {
+    
 }
 #button-addon1{
     width: 50px;
