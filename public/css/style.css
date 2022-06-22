@@ -1,5 +1,5 @@
 body {
-    background-color: #4d0303;
+    background-color: #614d8f;
     display: flex;
     flex-direction: row;
     font-family: 'Times New Roman', Times, serif;
@@ -104,13 +104,9 @@ a:focus {
 }
 
 .powerLog {
-<<<<<<< HEAD
-    position: relative;
-    margin-top: 400px;
-=======
-    position: fixed;
-    margin-top: 65%;
->>>>>>> 98f9066e71c837e7f1a3628dbdd27c2e6542bfad
+    top: 1000px;
+    /* position: fixed; */
+    margin-top: 545%;
 }
 
 .cover-art {
