@@ -267,12 +267,12 @@ padding: 15px;
 
 .container-lg{
 background-color: #818181;
-height: 100vh;
+height: 85vh;
 width: 550px;
 position: relative;
-top: 0px;
-right: -35px;
-padding-top: 120px;
+top: 60px;
+right: 450px;
+padding-top: 125px;
 -webkit-box-shadow: 8px 7px 8px 2px #000000;
     box-shadow: 8px 7px 8px 2px #000000;
     border-radius: 15px;
