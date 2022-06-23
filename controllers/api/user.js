@@ -47,8 +47,10 @@ router.post('/login', async (req, res) => {
 
   // where the user signs up route
   router.post('/', async (req, res) => {
+    console.log(req.body)
     try {
       const userData = await User.create(req.body);
+      
   
       req.session.save(() => {
         req.session.user_id = userData.id;
