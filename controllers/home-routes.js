@@ -9,21 +9,21 @@ router.get('/', async (req, res) => {
         });
         // console.log(homeLog)
         // homeLog = homeLog.get({ plain: true }); 
-        res.render('home', {homeLog});
+        res.render('login', {homeLog});
     } catch(error) {
         res.status(404).send("Almost there!")
     }
 });
 
-router.get('/login', async (req, res) => {
-    try {
-        let loginPage = await User.findAll({
-        });
-        res.render('login', {loginPage});
-    } catch(error) {
-        res.status(404).send("Almost there!")
-    }
-});
+// router.get('/login', async (req, res) => {
+//     try {
+//         let loginPage = await User.findAll({
+//         });
+//         res.render('login', {loginPage});
+//     } catch(error) {
+//         res.status(404).send("Almost there!")
+//     }
+// });
 
 router.get('/user', async (req, res) => {
     try {
