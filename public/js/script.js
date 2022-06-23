@@ -42,4 +42,4 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
 
 });
 }
-fetchButton.addEventListener('click', apiGet);
+fetchButton.addEventListener('click', apiGet);//The property addEventlistener cannot be read
