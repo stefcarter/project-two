@@ -32,6 +32,7 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
     listImg.setAttribute('alt', "title");
     
     listText.textContent = data[i].game_name;
+    listText.textContent = data[i].platform;
     listItem.appendChild(listImg);
     listItem.appendChild(listText);
     

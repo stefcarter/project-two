@@ -53,12 +53,6 @@ ul {
     width: 100%;
 }
 
-.mainPic img {
-    margin-left: 2px;
-    height: 350px;
-    display: flex;
-    border-radius: 5px;
-}
 
 img {
     height: 25px;
@@ -113,6 +107,10 @@ a:focus {
     }
 }
 
+.twitchS {
+    margin-top: 400px;
+}
+
 .powerLog {
     top: 1000px;
     /* position: fixed; */
@@ -122,13 +120,28 @@ a:focus {
 .cover-art {
     position: relative;
     top: 100px;
-    left: -40px;
+    left: 30vh;
     bottom: -50px;
     width: 600px;
-    height: 600px;
+    height: 410px;
     background-color: black;
     border-radius: 5%;
 }
+
+.mainPic img {
+    margin-left: 9Xpx;
+    height: 350px;
+    padding-right: 10px;
+}
+
+.mainPic p {
+    color: white;
+    font-size: larger;
+}
+#coverArt {
+    display: flex;
+}
+
 
 /* .artSty {
     width: auto;  
@@ -152,8 +165,8 @@ padding: 15px;
     background-color: black;
     width: 300px;
     height: 310px;
-    bottom: -800px;
-    left: -450px;
+    bottom: -700px;
+    left: -70vh;
     display: flex;
     align-content: space-around;
     justify-content: space-between;
@@ -238,7 +251,7 @@ padding: 15px;
     left: 70%;
     background: black;
     border-radius: 5%;
-    left: 1250px;
+    left: 80vh;
 }
 @media screen {
     
@@ -263,3 +276,22 @@ right: -35px;
     border-radius: 105px;
 }
 
+.card {
+    -webkit-box-shadow: 8px 7px 8px 2px #000000;
+    box-shadow: 8px 7px 8px 2px #000000;
+    margin-top: 5px;
+}
+
+.title {
+    font-family: 'Alike Angular', serif;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 35px;
+    color: #ddd;
+    position: absolute;
+    left: -40px;
+}
+
+#title-icon {
+    height: 45px;
+
+}
