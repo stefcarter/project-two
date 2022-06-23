@@ -1,4 +1,4 @@
-<body id="loginBackground">
+
     
     {{!-- <div class="videoEmbed">
         <img id="backgroundImg" src="/public/Images/LoginVOD.gif" width="640" height="480" allow="autoplay"></img>
@@ -11,28 +11,28 @@
 
 </div> --}}
     <div class="row row">
-       <form id="loginbutton">
+       <form >
         <div class="col">
             <h2>User login</h2>
             <hr>
             {{!-- input fields for login and button --}}
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"></span>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                <input type="text" id="loginemail" class="form-control" placeholder="Username" aria-label="Username"
                     aria-describedby="basic-addon1">
             </div>
             <hr>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"></span>
-                <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+                <input type="password" id="loginpassword" class="form-control" placeholder="Password" aria-label="Username"
                     aria-describedby="basic-addon1">
             </div>
             {{!-- add show password function for password input field --}}
             {{!-- button --}}
-            <button type="button"  class="btn btn-primary">Login</button>
+            <button type="button" id="loginbutton" class="btn btn-primary">Login</button>
         </div>
         </form>
-        <form id="signupbutton">
+        <form >
         <div class="col">
             <h2>Account creation</h2>
             <hr>
@@ -46,28 +46,41 @@
             <input>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"></span>
-                <input type="text" id="loginUsername" class="form-control" placeholder="Username" aria-label="Username"
+                <input type="text" id="signupUsername" class="form-control" placeholder="Username" aria-label="Username"
                     aria-describedby="basic-addon1">
             </div>
             <hr>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"></span>
+<<<<<<< HEAD
                 <input type="text" class="form-control" placeholder="email" id="loginemail" aria-label="Username"
+=======
+                <input type="text" id="signupemail" class="form-control" placeholder="email" aria-label="Username"
+>>>>>>> 6c652b7df7feafc5b14e40ccbda70369000e1c4e
                     aria-describedby="basic-addon1">
             </div>
             <hr>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"></span>
+<<<<<<< HEAD
                 <input type="password" class="form-control" placeholder="password" aria-label="Username" id="loginpassword"
+=======
+                <input type="password" id="signuppassword" class="form-control" placeholder="password" aria-label="Username"
+>>>>>>> 6c652b7df7feafc5b14e40ccbda70369000e1c4e
                     aria-describedby="basic-addon1">
             </div>
             
             {{!-- button --}}
             {{!-- add show password function for password input field --}}
+<<<<<<< HEAD
             <button type="button"  class="btn btn-secondary" id="singupbutton">Create Account</button>
+=======
+            <button type="button"  id="signupbutton" class="btn btn-secondary">Create Account</button>
+>>>>>>> 6c652b7df7feafc5b14e40ccbda70369000e1c4e
 </div>
 </form>
         {{!-- </div> hello --}}
         </div>
     </div>
-</body>
+
+<script src="/js/login.js"></script>
