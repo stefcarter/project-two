@@ -50,6 +50,14 @@ ul {
     width: 100%;
 }
 
+.mainPic img {
+    margin-left: 2px;
+    height: 350px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+
 img {
     height: 25px;
 }
@@ -94,7 +102,7 @@ a:focus {
 }
 
 .powerLog {
-    position: fixed;
+    /* position: fixed; */
     margin-top: 65%;
 }
 
@@ -103,17 +111,17 @@ a:focus {
     top: 100px;
     left: -40px;
     bottom: -50px;
-    width: 350px;
+    width: 600px;
     height: 600px;
     background-color: black;
     border-radius: 5%;
 }
 
-.artSty {
+/* .artSty {
     width: auto;  
 text-align: center;  
 padding: 15px;  
-}
+} */
 
 .comments {
     position: relative;
@@ -132,7 +140,7 @@ padding: 15px;
     width: 300px;
     height: 310px;
     bottom: -800px;
-    left: -850px;
+    left: -450px;
     display: flex;
     align-content: space-around;
     justify-content: space-between;
