@@ -1,10 +1,11 @@
-
 // API for cover art
 var repoList = document.querySelector('#coverArt');
 var fetchButton = document.querySelector('.fetch-button');
 var newName = document.querySelector('#newCall');
 
-var newSearch = document.querySelector('#test');
+// What is this?
+// var newSearch = document.querySelector('#test');
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -32,14 +33,13 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
     
     listText.textContent = data[i].game_name;
     listItem.appendChild(listImg);
-    listItem.appendChild(listText)
+    listItem.appendChild(listText);
     
-    // console.log(data[i].game_name);
+    console.log(data[i].game_name);
    
     repoList.appendChild(listItem);
   }
-  
+
 });
 }
 fetchButton.addEventListener('click', apiGet);
-

@@ -15,15 +15,15 @@ router.get('/', async (req, res) => {
     }
 });
 
-// router.get('/login', async (req, res) => {
-//     try {
-//         let loginPage = await User.findAll({
-//         });
-//         res.render('login', {loginPage});
-//     } catch(error) {
-//         res.status(404).send("Almost there!")
-//     }
-// });
+router.get('/home', async (req, res) => {
+    try {
+        let homePage = await User.findAll({
+        });
+        res.render('home', {homePage});
+    } catch(error) {
+        res.status(404).send("Almost there!")
+    }
+});
 
 router.get('/user', async (req, res) => {
     try {
