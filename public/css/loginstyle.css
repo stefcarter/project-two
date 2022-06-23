@@ -1,0 +1,17 @@
+/* .full-screen{
+    /* background-size: cover; */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    opacity: 50%; */
+/* } */ 
+#loginBackground{
+    background-image: 
+    url(https://media.giphy.com/media/e54iaZjS7yhqRHw3wZ/giphy-downsized-large.gif); 
+    background-size: cover;
+}
+/* .col{
+    right: 250%;
+} */
+#backgroundImg{
+    backround size: cover;
+}

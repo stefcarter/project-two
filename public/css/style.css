@@ -1,8 +1,11 @@
-body {
+body { 
     background-color: #614d8f;
     display: flex;
     flex-direction: row;
     font-family: 'Times New Roman', Times, serif;
+    background-image: 
+    url(https://media.giphy.com/media/e54iaZjS7yhqRHw3wZ/giphy-downsized-large.gif); 
+    background-size: cover;
 }
 
 ul {
@@ -11,7 +14,7 @@ ul {
     text-align: start;
     display: block;
 }
-
+/* there is something wrong with .alignC */
 .alignC {
     position: absolute;
     left: 45%;
