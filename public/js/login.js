@@ -1,6 +1,6 @@
 const signupHandler = async (event) => {
     event.preventDefault();
-    console.log('inside signup handler')
+    console.log('inside signup handler');
     // const name = document.querySelector('#signupName').value.trim();
     const email = document.querySelector('#signupemail').value.trim();
     const password = document.querySelector('#signuppassword').value.trim();
@@ -26,9 +26,10 @@ const signupHandler = async (event) => {
 const loginHandler = async (event) => {
     event.preventDefault();
     console.log('inside login handler')
-    const email = document.querySelector('#loginemail').value.trim();
-    const password = document.querySelector('#loginpassword').value.trim();
-
+    const email = document.querySelector('#loginemail');
+    const password = document.querySelector('#loginpassword');
+    // const email = document.querySelector('#loginemail').value.trim();
+    // const password = document.querySelector('#loginpassword').value.trim();
     if (password && email) {
         const response = await fetch('/api/user/login', {
             method: 'POST',
