@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const res = require('express/lib/response');
-const {User} = require('../../models');
+const { User } = require('../../models/User');
 
 
 // where the user logs in route
@@ -28,6 +28,7 @@ router.post('/login', async (req, res) => {
       });
   
     } catch (err) {
+      console.log(err)
       res.status(400).json(err);
     }
   });
