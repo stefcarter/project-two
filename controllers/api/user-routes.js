@@ -1,10 +1,6 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
-<<<<<<< HEAD
-const {User} = require('../../models/User');
-=======
 const { User } = require('../../models/User');
->>>>>>> 0567a0c254292f3054ec66b087dd52ffeb115e53
 
 router.post('/', async (req, res) => {
   console.log("we are here")  
