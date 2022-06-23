@@ -50,12 +50,6 @@ ul {
     width: 100%;
 }
 
-.mainPic img {
-    margin-left: 2px;
-    height: 350px;
-    display: flex;
-    border-radius: 5px;
-}
 
 img {
     height: 25px;
@@ -119,13 +113,23 @@ a:focus {
 .cover-art {
     position: relative;
     top: 100px;
-    left: -40px;
+    left: -10px;
     bottom: -50px;
     width: 600px;
     height: 600px;
     background-color: black;
     border-radius: 5%;
 }
+
+.mainPic img {
+    margin-left: 2px;
+    height: 350px;
+}
+
+#coverArt {
+    display: flex;
+}
+
 
 /* .artSty {
     width: auto;  
