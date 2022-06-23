@@ -8,6 +8,7 @@
     background-image: 
     url(https://media.giphy.com/media/e54iaZjS7yhqRHw3wZ/giphy-downsized-large.gif); 
     background-size: cover;
+    opacity: 1;
 }
 /* .col{
     right: 250%;
