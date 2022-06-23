@@ -54,8 +54,7 @@ ul {
     margin-left: 2px;
     height: 350px;
     display: flex;
-    text-align: center;
-    line-height: 50px;
+    border-radius: 5px;
 }
 
 img {
