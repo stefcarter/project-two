@@ -3,8 +3,8 @@ body {
     display: flex;
     flex-direction: row;
     font-family: 'Times New Roman', Times, serif;
-    background-image: 
-    url(https://media.giphy.com/media/e54iaZjS7yhqRHw3wZ/giphy-downsized-large.gif); 
+    /* background-image: 
+    url(https://media.giphy.com/media/e54iaZjS7yhqRHw3wZ/giphy-downsized-large.gif);  */
     background-size: cover;
 }
 
