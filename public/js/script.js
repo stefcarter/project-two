@@ -1,4 +1,4 @@
-// API for cover art
+
 var repoList = document.querySelector('#coverArt');
 var fetchButton = document.querySelector('.fetch-button');
 var newName = document.querySelector('#newCall');
