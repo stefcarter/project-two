@@ -1,12 +1,12 @@
 const signupHandler = async (event) => {
     event.preventDefault();
-
+    console.log('inside signup handler')
     const name = document.querySelector('#signupName').value.trim();
-    const email = document.querySelector('signupEmail').value.trim();
+    const email = document.querySelector('#signupEmail').value.trim();
     const password = document.querySelector('#signupPW').value.trim();
 
     if (name && email && password) {
-        const response = await fetch('/api/newuser', {
+        const response = await fetch('/api/newuser/', {
             method: 'POST',
             body: JSON.stringify({name, email, password}),
             headers: {'Content-Type': 'application/json'}
@@ -24,7 +24,7 @@ const signupHandler = async (event) => {
 
 const loginHandler = async (event) => {
     event.preventDefault();
-
+    console.log('inside login handler')
     const email = document.querySelector('#loginemail').value.trim();
     const password = document.querySelector('#loginpassword').value.trim();
 
@@ -45,9 +45,9 @@ const loginHandler = async (event) => {
 };
 
 document
-.querySelector('.login-form') // will prob have the change this
-.addEventListener('submit', loginHandler)
+.querySelector('#login-form') // will prob have the change this
+.addEventListener('click', loginHandler)
 
 document
-.querySelector('.signup-form') // will prob have to change this
-.addEventListener('submit', signupHandler)
+.querySelector('#signup-form') // will prob have to change this
+.addEventListener('click', signupHandler)
