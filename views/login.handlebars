@@ -1,24 +1,24 @@
 
     
     {{!-- <div class="videoEmbed">
-        <img id="backgroundImg" src="/public/Images/LoginVOD.gif" width="640" height="480" allow="autoplay"></img>
+        <img id="backgroundImg" src="/public/Images/LoginVOD.gif" width="640" height="480" allow="autoplay"></img> --}}
 
-{{!--<body> --}}
-{{!--    <div class="videoEmbed"> --}}
-{{!--        <iframe src="https://drive.google.com/file/d/17oqHQ67K2REwgEiIsQ2FeQ_el3d-569Z/preview" width="640" height="480" allow="autoplay"></iframe> --}}
-{{!--    </div> --}}
+{{!-- <body> --}}
+   {{!-- <div class="videoEmbed">
+       <iframe src="https://drive.google.com/file/d/17oqHQ67K2REwgEiIsQ2FeQ_el3d-569Z/preview" width="640" height="480" allow="autoplay"></iframe>
+   </div> --}}
 
 
-</div> --}}
-    <div class="row row loginSlide">
-       <form >
+<div class="container-lg">
+    
+     
         <div class="col">
             <h2>User login</h2>
             <hr>
             {{!-- input fields for login and button --}}
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"></span>
-                <input type="text" id="loginemail" class="form-control" placeholder="Username" aria-label="Username"
+                <input type="text" id="loginemail" class="form-control" placeholder="email" aria-label="Username"
                     aria-describedby="basic-addon1">
             </div>
             <hr>
@@ -31,9 +31,9 @@
             {{!-- button --}}
             <button type="button" id="loginbutton" class="btn btn-primary">Login</button>
         </div>
-        </form>
-        <form >
-        <div class="col">
+     
+ 
+      
             <h2>Account creation</h2>
             <hr>
             {{!-- input fields for account creation plus button --}}
@@ -49,7 +49,6 @@
                 <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                     aria-describedby="basic-addon1">
             </div> --}}
-            <hr>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"></span>
                 <input type="text" class="form-control" placeholder="email" aria-label="Username"
@@ -66,7 +65,7 @@
             {{!-- add show password function for password input field --}}
             <button type="button"  id="signupbutton" class="btn btn-secondary">Create Account</button>
             </div>
-            </form>
-        </div> 
-
+        
+    
+</div>
 <script src="/js/login.js"></script>

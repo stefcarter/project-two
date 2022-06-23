@@ -267,11 +267,15 @@ padding: 15px;
 
 .container-lg{
 background-color: #818181;
-height: 450px;
-width: 690px;
+height: 100vh;
+width: 550px;
 position: relative;
-top: 110px;
+top: 0px;
 right: -35px;
+padding-top: 120px;
+-webkit-box-shadow: 8px 7px 8px 2px #000000;
+    box-shadow: 8px 7px 8px 2px #000000;
+    border-radius: 15px;
 }
 
 #avatar-img{
@@ -282,7 +286,7 @@ right: -35px;
 
 .card {
     -webkit-box-shadow: 8px 7px 8px 2px #000000;
-    box-shadow: 8px 7px 8px 2px #000000;
+    box-shadow: 8px 7px 12px 2px #000000;
     margin-top: 5px;
 }
 
