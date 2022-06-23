@@ -12,6 +12,10 @@
 /* .col{
     right: 250%;
 } */
-#backgroundImg{
+/* #backgroundImg{
     backround size: cover;
+} */
+
+form {
+    align-content: center;
 }
