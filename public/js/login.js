@@ -26,8 +26,8 @@ const signupHandler = async (event) => {
 const loginHandler = async (event) => {
     event.preventDefault();
     console.log('inside login handler')
-    const email = document.querySelector('#loginemail').value.trim();
-    const password = document.querySelector('#loginpassword').value.trim();
+    const email = document.querySelector('#loginemail');
+    const password = document.querySelector('#loginpassword');
 
     if (password && email) {
         const response = await fetch('/api/user/login', {
@@ -35,6 +35,7 @@ const loginHandler = async (event) => {
             body: JSON.stringify({ password, email }),
             headers: { 'Content-Type': 'application/json '}
         });
+        console.log(response)
 
         if (response.ok) {
             document.location.replace('/user')
