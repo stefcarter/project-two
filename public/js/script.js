@@ -1,6 +1,6 @@
 
 var repoList = document.querySelector('#coverArt');
-var fetchButton = document.querySelector('.fetch-button');
+var fetchButton = document.querySelector('#button-addon1');
 var newName = document.querySelector('#newCall');
 
 // What is this?
@@ -15,6 +15,7 @@ const options = {
 };
 
 function apiGet(){
+  console.log('test')
 fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , options)
 .then(function (response) {
   return response.json();
@@ -43,4 +44,7 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
 
 });
 }
-fetchButton.addEventListener('click', apiGet);//The property addEventlistener cannot be read
+// window.addEventListener('#button-addon1','click', apiGet());//The property addEventlistener cannot be read
+function test() {
+fetchButton.addEventListener('click', apiGet);
+}
