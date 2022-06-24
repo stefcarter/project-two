@@ -1,5 +1,12 @@
 const signupHandler = async (event) => {
     event.preventDefault();
+
+    console.log('inside signup handler');
+    // const name = document.querySelector('#signupName').value.trim();
+    const email = document.querySelector('#signupemail').value.trim();
+    const password = document.querySelector('#signuppassword').value.trim();
+    // const username = document.querySelector('#signupUsername').value.trim();
+
     console.log('inside signup handler')
     
   
@@ -7,6 +14,7 @@ const signupHandler = async (event) => {
     var password = document.querySelector('#signuppassword');
     email = document.getElementById('signupemail').value;
     password = document.getElementById('signuppassword').value;
+
 
     console.log(email, password);
     if (email && password) {
@@ -32,6 +40,10 @@ const loginHandler = async (event) => {
     console.log('inside login handler');
     const email = document.querySelector('#loginemail');
     const password = document.querySelector('#loginpassword');
+
+    // const email = document.querySelector('#loginemail').value.trim();
+    // const password = document.querySelector('#loginpassword').value.trim();
+
 
     if (password && email) {
         console.log(email, password);
