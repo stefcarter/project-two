@@ -1,10 +1,24 @@
 const signupHandler = async (event) => {
     event.preventDefault();
+<<<<<<< HEAD
+=======
+
+    console.log('inside signup handler');
+    // const name = document.querySelector('#signupName').value.trim();
+    const email = document.querySelector('#signupemail').value.trim();
+    const password = document.querySelector('#signuppassword').value.trim();
+    // const username = document.querySelector('#signupUsername').value.trim();
+
+>>>>>>> de8f3d68c070c95274e8952996dab3aa0d3417ee
     console.log('inside signup handler')
     
   
     const email = document.querySelector('#signupemail');
     const password = document.querySelector('#signuppassword');
+<<<<<<< HEAD
+=======
+
+>>>>>>> de8f3d68c070c95274e8952996dab3aa0d3417ee
 
     if (email && password) {
         const response = await fetch('/api/user/signup', {
@@ -28,6 +42,14 @@ const loginHandler = async (event) => {
     console.log('inside login handler')
     const email = document.querySelector('#loginemail');
     const password = document.querySelector('#loginpassword');
+<<<<<<< HEAD
+=======
+
+    // const email = document.querySelector('#loginemail').value.trim();
+    // const password = document.querySelector('#loginpassword').value.trim();
+
+
+>>>>>>> de8f3d68c070c95274e8952996dab3aa0d3417ee
     if (password && email) {
         const response = await fetch('/api/user/login', {
             method: 'POST',
