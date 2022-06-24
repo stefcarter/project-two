@@ -38,13 +38,13 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
     criticscore.textContent = data[i].criticscore;
     url.textContent = data[i].game_url;
   
-    // listText.textContent = data[i].criticscore;
-    // listText2.textContent = data[i].game_url;
-    listItem.appendChild(listImg);
+  
+    listItem.appendChild(listImg); // how to label these for each item
     listItem.appendChild(system);
     listItem.appendChild(gamename);
     listItem.appendChild(criticscore);
-    listItem.appendChild(url);
+    listItem.appendChild(url); // how to make this a click here link
+
     
     console.log(data[i].game_name);
    
