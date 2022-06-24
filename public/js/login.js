@@ -1,10 +1,18 @@
 const signupHandler = async (event) => {
     event.preventDefault();
+
+    console.log('inside signup handler');
+    // const name = document.querySelector('#signupName').value.trim();
+    const email = document.querySelector('#signupemail').value.trim();
+    const password = document.querySelector('#signuppassword').value.trim();
+    // const username = document.querySelector('#signupUsername').value.trim();
+
     console.log('inside signup handler')
     
   
     const email = document.querySelector('#signupemail');
     const password = document.querySelector('#signuppassword');
+
 
     if (email && password) {
         const response = await fetch('/api/user/signup', {
@@ -29,6 +37,10 @@ const loginHandler = async (event) => {
     const email = document.querySelector('#loginemail');
     const password = document.querySelector('#loginpassword');
 
+    // const email = document.querySelector('#loginemail').value.trim();
+    // const password = document.querySelector('#loginpassword').value.trim();
+
+
     if (password && email) {
         const response = await fetch('/api/user/login', {
             method: 'POST',
@@ -47,9 +59,9 @@ const loginHandler = async (event) => {
 };
 
 document
-.querySelector('#loginbutton')
+.querySelector('.loginbutton')
 .addEventListener('click', loginHandler)
 
 document
-.querySelector('#signupbutton') 
+.querySelector('.signupbutton') 
 .addEventListener('click', signupHandler)
