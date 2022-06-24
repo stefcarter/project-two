@@ -1,19 +1,13 @@
 const signupHandler = async (event) => {
     event.preventDefault();
 
-    console.log('inside signup handler');
-    // const name = document.querySelector('#signupName').value.trim();
-    const email = document.querySelector('#signupemail').value.trim();
-    const password = document.querySelector('#signuppassword').value.trim();
-    // const username = document.querySelector('#signupUsername').value.trim();
-
     console.log('inside signup handler')
     
   
     var email = document.querySelector('#signupemail');
     var password = document.querySelector('#signuppassword');
-    email = document.getElementById('signupemail').value;
-    password = document.getElementById('signuppassword').value;
+    email = document.getElementById('signupemail').value.trim();
+    password = document.getElementById('signuppassword').value.trim();
 
 
     console.log(email, password);
