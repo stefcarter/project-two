@@ -1,4 +1,3 @@
-
 var repoList = document.querySelector('#coverArt');
 var fetchButton = document.querySelector('#button-addon1');
 var newName = document.querySelector('#newCall');
@@ -15,7 +14,7 @@ const options = {
 };
 
 function apiGet(){
-  console.log('test')
+  // console.log('test')
 fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , options)
 .then(function (response) {
   return response.json();
@@ -45,6 +44,6 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
 });
 }
 // window.addEventListener('#button-addon1','click', apiGet());//The property addEventlistener cannot be read
-function test() {
+// function test() {
 fetchButton.addEventListener('click', apiGet);
-}
+// }
