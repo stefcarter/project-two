@@ -40,6 +40,12 @@ User.init(
                 newUserData.password = await bcrypt.hash(newUserData.password, 10);
                 return newUserData;
             },
+            beforeUpdate: async (updatedData) => {
+                if (typeof updatedData.password !== 'undefined' && updatedData.password.length >= 8){
+                    updatedData.password = await bcrypt.hash(updatedData.password, 10)
+                };
+                return updatedData;
+            }
         },
         sequelize,
         timestamps: false,
