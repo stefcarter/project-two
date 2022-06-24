@@ -5,8 +5,8 @@ const signupHandler = async (event) => {
   
     var email = document.querySelector('#signupemail');
     var password = document.querySelector('#signuppassword');
-    email = document.getElementById('signupemail').value;
-    password = document.getElementById('signuppassword').value;
+    email = document.getElementById('signupemail').value.trim();
+    password = document.getElementById('signuppassword').value.trim();
 
     console.log(email, password);
     if (email && password) {
