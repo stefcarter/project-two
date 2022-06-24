@@ -25,16 +25,26 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
     var listItem = document.createElement('li');
     var listImg = document.createElement('img');
     
-    var listText = document.createElement('p');
-
+    var system = document.createElement('p');
+    var gamename = document.createElement('p');
+    var criticscore = document.createElement('p');
+    var url = document.createElement('p');
     listImg.setAttribute('src', data[i].box_art);
     console.log(data[i].box_art);
     listImg.setAttribute('alt', "title");
     
-    listText.textContent = data[i].game_name;
-    listText.textContent = data[i].platform;
+    system.textContent = data[i].platform;
+    gamename.textContent = data[i].game_name;
+    criticscore.textContent = data[i].criticscore;
+    url.textContent = data[i].game_url;
+  
+    // listText.textContent = data[i].criticscore;
+    // listText2.textContent = data[i].game_url;
     listItem.appendChild(listImg);
-    listItem.appendChild(listText);
+    listItem.appendChild(system);
+    listItem.appendChild(gamename);
+    listItem.appendChild(criticscore);
+    listItem.appendChild(url);
     
     console.log(data[i].game_name);
    
