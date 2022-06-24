@@ -33,12 +33,12 @@ const signupHandler = async (event) => {
 const loginHandler = async (event) => {
     event.preventDefault();
     console.log('inside login handler');
-    const email = document.querySelector('#loginemail');
-    const password = document.querySelector('#loginpassword');
-
-    // const email = document.querySelector('#loginemail').value.trim();
-    // const password = document.querySelector('#loginpassword').value.trim();
-
+    let email = document.querySelector('#loginemail');
+    
+    let password = document.querySelector('#loginpassword');
+    email = email.value;
+    password = password.value;
+    
 
     if (password && email) {
         console.log(email, password);
@@ -50,7 +50,7 @@ const loginHandler = async (event) => {
         console.log(response)
 
         if (response.ok) {
-            document.location.replace('/user');
+            document.location.replace('/api/user/home');
         }
         else {
             alert(response.statusText);
