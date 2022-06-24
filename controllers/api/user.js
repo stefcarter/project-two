@@ -1,7 +1,8 @@
 const router = require('express').Router();
-const res = require('express/lib/response');
+// const res = require('express/lib/response');
 const { User } = require('../../models/User');
 const bcrypt = require('bcrypt');
+
 
 
 // where the user logs in route
