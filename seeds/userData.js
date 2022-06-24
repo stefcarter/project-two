@@ -28,6 +28,6 @@ const fillData = [
     }
   ]
   
-  const seedFill = () => User.bulkCreate(fillData);
+  const seedFill = () => User.bulkCreate(fillData, {individualHooks: true});
 
   module.exports = seedFill;

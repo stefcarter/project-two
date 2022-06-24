@@ -50,7 +50,7 @@ const loginHandler = async (event) => {
         console.log(response)
 
         if (response.ok) {
-            document.location.replace('/api/user/home');
+            document.location.replace('/user');
         }
         else {
             alert(response.statusText);
