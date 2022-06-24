@@ -1,11 +1,14 @@
 const router = require('express').Router();
-const res = require('express/lib/response');
+// const res = require('express/lib/response');
 const { User } = require('../../models/User');
+const bcrypt = require('bcrypt');
+
 
 
 // where the user logs in route
 router.post('/login', async (req, res) => { 
-    try {
+  console.log('login api in user.js')  
+  try {
       const userData = await User.findOne({ where: { email: req.body.email } });
   
       if (!userData) {
@@ -36,6 +39,7 @@ router.post('/login', async (req, res) => {
 
   // how the user logsout route
   router.post('/logout', (req, res) => {
+    console.log('logout api in user.js')
     if (req.session.logged_in) {
       req.session.destroy(() => {
         res.status(204).end();
@@ -47,8 +51,8 @@ router.post('/login', async (req, res) => {
 
 
   // where the user signs up route
-  router.post('/', async (req, res) => {
-    console.log(req.body, "turtle lives here")
+  router.post('/signup', async (req, res) => {
+    console.log(req.body, "signup api in user.js")
     try {
       const userData = await User.create(req.body);
       
@@ -67,3 +71,44 @@ router.post('/login', async (req, res) => {
 
 
   module.exports = router;
+
+  // router.post('/signup', async (req, res) => {
+  //   console.log("we are here")  
+  //   try {
+  //       const userData = await User.create(req.body);
+  //       console.log(req.body)
+  //       req.session.save(() => {
+  //         req.session.user_id = userData.id;
+  //         req.session.logged_in = true;
+    
+  //         res.status(200).json(userData);
+  //       });
+  //     } catch (err) {
+  //       res.status(400).json(err);
+  //     }
+  //   });
+  
+  
+  // router.post('/login', async (req, res) => {
+  //     try {
+  //         const userData = await User.findOne({ where: { email: req.body.email} });
+  //         if (!userData) {
+  //             res.status(404).json({ message: 'Epic failure. Please recast your fate!' });
+  //             return;
+  //         }
+  
+  //         const validPassword = await bcrypt.compare(
+  //             req.body.password,
+  //             userData.password
+  //         );
+  //         if (!validPassword) {
+  //             req.status(400).json({ message: 'Thine riddles have no standing here! Try again mortal.'});
+  //             return;
+  //         }
+  //         res.status(200).json({ message: 'You have made it past the bridge troll!' });
+  //     } catch (err) {
+  //         res.status(500).json({ message: 'No one here but us chickens.'});
+  //     }
+  // });
+  
+  // module.exports = router;
