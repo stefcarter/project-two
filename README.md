@@ -34,9 +34,9 @@ Create an application that allows the user to search games that they’re intere
  
 ![Screenshot](./public/images/Screenshot1.JPG)
 
-![Screenshot](./public/images/Screenshot2.JPG) 
+![Screenshot](./public/Images/Screenshot2.JPG)
 
-![Screenshot](./public/images/Screenshot3.JPG) 
+![Screenshot](./public/Images/Screenshot3.JPG) 
 
 
 # Deployed
