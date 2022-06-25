@@ -1,8 +1,9 @@
 const router = require('express').Router();
 // const res = require('express/lib/response');
-const { User } = require('../../models/User');
+const { User } = require('../../models');
 const bcrypt = require('bcrypt');
 
+console.log(User);
 
 
 // where the user logs in route
@@ -54,17 +55,22 @@ router.post('/login', async (req, res) => {
   router.post('/signup', async (req, res) => {
     console.log(req.body, "signup api in user.js")
     try {
-      const userData = await User.create(req.body);
-      
+      console.log(req.body.email);
+      const userData = await User.create({
+        email: req.body.email,
+        password: req.body.password
+      });
+      console.log('before save');
   
       req.session.save(() => {
-        req.session.user_id = userData.id;
+        // req.session.user_id = userData.id;
         req.session.logged_in = true;
         
         res.status(200).json(userData);
       });
     } catch (err) {
-      console.log(err)
+      console.log('catch at signup');
+      console.log(err);
       res.status(400).json(err);
     }
   });

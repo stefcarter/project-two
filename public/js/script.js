@@ -1,6 +1,5 @@
-
 var repoList = document.querySelector('#coverArt');
-var fetchButton = document.querySelector('.fetch-button');
+var fetchButton = document.querySelector('#button-addon1');
 var newName = document.querySelector('#newCall');
 
 // What is this?
@@ -15,6 +14,7 @@ const options = {
 };
 
 function apiGet(){
+  // console.log('test')
 fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , options)
 .then(function (response) {
   return response.json();
@@ -25,16 +25,26 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
     var listItem = document.createElement('li');
     var listImg = document.createElement('img');
     
-    var listText = document.createElement('p');
-
+    var system = document.createElement('p');
+    var gamename = document.createElement('p');
+    var criticscore = document.createElement('p');
+    var url = document.createElement('p');
     listImg.setAttribute('src', data[i].box_art);
     console.log(data[i].box_art);
     listImg.setAttribute('alt', "title");
     
-    listText.textContent = data[i].game_name;
-    listText.textContent = data[i].platform;
-    listItem.appendChild(listImg);
-    listItem.appendChild(listText);
+    system.textContent = data[i].platform;
+    gamename.textContent = data[i].game_name;
+    criticscore.textContent = data[i].criticscore;
+    url.textContent = data[i].game_url;
+  
+  
+    listItem.appendChild(listImg); // how to label these for each item
+    listItem.appendChild(system);
+    listItem.appendChild(gamename);
+    listItem.appendChild(criticscore);
+    listItem.appendChild(url); // how to make this a click here link
+
     
     console.log(data[i].game_name);
    
@@ -43,4 +53,7 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
 
 });
 }
-fetchButton.addEventListener('click', apiGet);//The property addEventlistener cannot be read
+// window.addEventListener('#button-addon1','click', apiGet());//The property addEventlistener cannot be read
+// function test() {
+fetchButton.addEventListener('click', apiGet);
+// }
