@@ -53,7 +53,6 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
 
 });
 }
-// window.addEventListener('#button-addon1','click', apiGet());//The property addEventlistener cannot be read
-// function test() {
+
 fetchButton.addEventListener('click', apiGet);
-// }
+
