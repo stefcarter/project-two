@@ -10,29 +10,36 @@
 # Table of Contents
 1. [Proposal](#proposal)
 2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Credits](#credits)
-5. [License](#license)
-6. [Features](#features)
+3. [Screenshots](#creenshots)
+4. [Deployed](#deployed)
+
 # Proposal
 
-Create an application that allows the user to search games that they’re interested in. When the user searches for a game, they are presented with youtube and twitch creators that play the game they searched for. On the server side, the user can make an account that allows them to select their favorite games.
+Create an application that allows the user to search games that they’re interested in. When the user searches for a game, they will be presented with a list of games that have the keyword tey searched for in it's title. They will also be able to see what console the game is for. On the server side, the user can make an account that allows them to select their favorite games.
 
-# Installation
-1.
-2.
-3.
-4.
-5.
+# Installed Dependencies 
+1. Bcrypt
+2. Connect-Session-Sequelize
+3. Dontenv
+4. Express
+5. Express-Handlebars
+6. Express-Session
+7. Handlebars
+8. Jest
+9. Mysql2
+10. Nodemon
+11. Sequelize
 
-# Usage
+# Screenshots
+ 
+![Screenshot](./public/Images/Screenshot1.JPG)
 
-Instructions for testing, how the application works
+![Screenshot](./public/Images/Screenshot2.JPG)
 
-# Credits
+![Screenshot](./public/Images/Screenshot3.JPG) 
 
-# License 
 
-Potential license
+# Deployed
 
-# Features
+
+LINK TO DEPLOYED APPLICATION: [CLICK HERE](https://project-two-upload.herokuapp.com/)
