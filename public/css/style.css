@@ -121,14 +121,13 @@ a:focus {
 .cover-art {
     position: relative;
     top: 100px;
-    /* left: 30vh; */
+    left: 27vh;
     bottom: -50px;
-    width: 100vw;
+    width: 47vw;
     height: 2107px;
     background-color: black;
-    /* border-radius: 5%;
-    overflow:hidden;
-    overflow-x: scroll; */
+    padding: 12px;
+    border-radius: 10px;
 }
 
 .mainPic img {
