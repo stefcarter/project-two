@@ -14,6 +14,7 @@ ul {
     text-align: start;
     display: block;
 }
+
 /* there is something wrong with .alignC */
 .alignC {
     position: absolute;
@@ -129,7 +130,7 @@ a:focus {
 }
 
 .mainPic img {
-    margin-left: 9Xpx;
+    margin-left: 9px;
     height: 350px;
     padding-right: 10px;
 }
@@ -140,6 +141,9 @@ a:focus {
 }
 #coverArt {
     display: flex;
+    align-content: center;
+    position:relative;
+    width: 100%;
 }
 
 
