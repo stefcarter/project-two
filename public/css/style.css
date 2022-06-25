@@ -139,6 +139,7 @@ a:focus {
 .mainPic p {
     color: white;
     font-size: larger;
+    margin-top: 10px;
 }
 
 #coverArt {
