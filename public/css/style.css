@@ -18,10 +18,10 @@ ul {
 /* there is something wrong with .alignC */
 .alignC {
     position: absolute;
-    left: 45%;
+    /* left: 45%; */
     top: 5%;
     height: 100px;
-    margin-left: -700px;
+    /* margin-left: -700px; */
     margin-top: -50px;
 }
 
@@ -121,12 +121,14 @@ a:focus {
 .cover-art {
     position: relative;
     top: 100px;
-    left: 30vh;
+    /* left: 30vh; */
     bottom: -50px;
-    width: 600px;
-    height: 410px;
+    width: 100vw;
+    height: 2107px;
     background-color: black;
-    border-radius: 5%;
+    /* border-radius: 5%;
+    overflow:hidden;
+    overflow-x: scroll; */
 }
 
 .mainPic img {
@@ -139,11 +141,18 @@ a:focus {
     color: white;
     font-size: larger;
 }
+
 #coverArt {
-    display: flex;
+    /* display: flex; */
     align-content: center;
     position:relative;
     width: 100%;
+}
+
+#coverArt li {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
 
@@ -256,7 +265,7 @@ padding: 15px;
     position: relative;
     top: 5px;
     height: 40px;
-    left: 70%;
+    /* left: 70%; */
     background: black;
     border-radius: 5%;
     left: 80vh;

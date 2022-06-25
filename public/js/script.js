@@ -18,20 +18,30 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
 })
 .then(function (data) {
   repoList.innerHTML = ''
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 6; i++) {
     var listItem = document.createElement('li');
     var listImg = document.createElement('img');
     
-    var listText = document.createElement('p');
-
+    var system = document.createElement('p');
+    var gamename = document.createElement('p');
+    var criticscore = document.createElement('p');
+    var url = document.createElement('p');
     listImg.setAttribute('src', data[i].box_art);
     console.log(data[i].box_art);
     listImg.setAttribute('alt', "title");
     
-    listText.textContent = data[i].game_name;
-    // listText.textContent = data[i].platform;
-    listItem.appendChild(listImg);
-    listItem.appendChild(listText);
+    system.textContent = data[i].platform;
+    gamename.textContent = data[i].game_name;
+    criticscore.textContent = data[i].criticscore;
+    url.textContent = data[i].game_url;
+  
+  
+    listItem.appendChild(listImg); // how to label these for each item
+    listItem.appendChild(system);
+    listItem.appendChild(gamename);
+    listItem.appendChild(criticscore);
+    listItem.appendChild(url); // how to make this a click here link
+
     
     console.log(data[i].game_name);
    
