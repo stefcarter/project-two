@@ -32,7 +32,7 @@ Create an application that allows the user to search games that they’re intere
 
 # Screenshots
  
-![Screenshot](./public/images/Screenshot1.JPG)
+![Screenshot](./public/Images/Screenshot1.JPG)
 
 ![Screenshot](./public/Images/Screenshot2.JPG)
 
