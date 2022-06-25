@@ -50,6 +50,5 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
 
 });
 }
-
 fetchButton.addEventListener('click', apiGet);
 
