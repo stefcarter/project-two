@@ -2,9 +2,6 @@ var repoList = document.querySelector('#coverArt');
 var fetchButton = document.querySelector('#button-addon1');
 var newName = document.querySelector('#newCall');
 
-// What is this?
-// var newSearch = document.querySelector('#test');
-
 const options = {
 	method: 'GET',
 	headers: {
@@ -21,7 +18,7 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
 })
 .then(function (data) {
   repoList.innerHTML = ''
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 6; i++) {
     var listItem = document.createElement('li');
     var listImg = document.createElement('img');
     
@@ -53,6 +50,5 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
 
 });
 }
-
 fetchButton.addEventListener('click', apiGet);
 
