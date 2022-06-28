@@ -2,6 +2,7 @@ const router = require('express').Router();
 // const res = require('express/lib/response');
 const { User } = require('../../models');
 const bcrypt = require('bcrypt');
+const session = require('express-session');
 
 console.log(User);
 
@@ -41,6 +42,7 @@ router.post('/login', async (req, res) => {
   // how the user logsout route
   router.post('/logout', (req, res) => {
     console.log('logout api in user.js')
+    console.log(req.session)
     if (req.session.logged_in) {
       req.session.destroy(() => {
         res.status(204).end();
