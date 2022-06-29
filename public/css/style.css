@@ -3,8 +3,7 @@ body {
     display: flex;
     flex-direction: row;
     font-family: 'Times New Roman', Times, serif;
-    /* background-image: 
-    url(https://media.giphy.com/media/e54iaZjS7yhqRHw3wZ/giphy-downsized-large.gif);  */
+    background-image: url("/Images/backdrop.jpg"); 
     background-size: cover;
 }
 
@@ -257,10 +256,6 @@ padding: 15px;
     color: black;
 }
 
-/* .loginSlide {
-    margin-left: 100px;    
-} */
-
 .search-bar {
     position: relative;
     top: 5px;
@@ -280,15 +275,16 @@ padding: 15px;
 
 .container-lg{
 background-color: #818181;
-height: 85vh;
-width: 550px;
+height: 60vh;
+width: 469px;
 position: relative;
-top: 60px;
+top: 84px;
 right: 450px;
-padding-top: 125px;
+padding-top: 20px;
 -webkit-box-shadow: 8px 7px 8px 2px #000000;
-    box-shadow: 8px 7px 8px 2px #000000;
-    border-radius: 15px;
+box-shadow: 8px 7px 8px 2px #000000;
+border-radius: 15px;
+left: -21vh;
 }
 
 #avatar-img{
@@ -311,6 +307,8 @@ padding-top: 125px;
     position: absolute;
    right: 250px;
    top: 80px;
+   /* left: 115px; */
+
 }
 
 #title-icon {

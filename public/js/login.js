@@ -23,7 +23,7 @@ const signupHandler = async (event) => {
             document.location.replace('/user');
         }
         else {
-            alert(response.statusText);
+            alert(response.statusText, "incorrect username/password");
         }
     };
 }
@@ -53,7 +53,7 @@ const loginHandler = async (event) => {
             document.location.replace('/user');
         }
         else {
-            alert(response.statusText);
+            alert( "incorrect username/password");
         }
     }
 };

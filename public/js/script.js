@@ -43,13 +43,14 @@ fetch('https://whatoplay.p.rapidapi.com/search?game=' + newName.value + '' , opt
     listItem.appendChild(url); // how to make this a click here link
 
     
-    console.log(data[i].game_name);
+    // console.log(data[i].game_name);
    
     repoList.appendChild(listItem);
   }
 
 });
-}
+
+};
 
 fetchButton.addEventListener('click', apiGet);
 
