@@ -6,7 +6,7 @@
 
 
 
-    {{!-- <div class="title loginSlide"> Gamer Database<span><img class="icon" src="Images/alien-pixelated-shape-of-a-digital-game.png"></span></div> --}}
+    <div class="title loginSlide"> Gamer Database<span><img class="icon" src="Images/alien-pixelated-shape-of-a-digital-game.png"></span></div>
        <div class="container-lg">
 
 
@@ -38,7 +38,7 @@
         </form>
         
         <div class="col">
-            <h2>Account creation</h2>
+            <h2>Account creation<span><img class="icon" src="Images/add-user.png"></span></h2>
             <hr>
             <form> 
 
@@ -55,7 +55,13 @@
                 <input type="password" id="signuppassword" class="form-control" placeholder="password" aria-label="Username"
                     aria-describedby="basic-addon1">
             </div>
-            
+            <hr>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"></span>
+                {{!-- <label for="signupemail">Email</label> --}}
+                <input type="text" id="name" class="form-control" placeholder="name" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
             {{!-- button --}}
             {{!-- add show password function for password input field --}}
             <button type="button"  id="signupbutton" class="btn btn-secondary signupbutton">Create Account</button>

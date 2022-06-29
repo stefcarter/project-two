@@ -302,10 +302,13 @@ left: -21vh;
 .title {
     font-family: 'Alike Angular', serif;
     font-family: 'Press Start 2P', cursive;
-    font-size: 35px;
+    font-size: 45px;
     color: #ddd;
     position: absolute;
-    left: 115px;
+   right: 250px;
+   top: 80px;
+   /* left: 115px; */
+
 }
 
 #title-icon {

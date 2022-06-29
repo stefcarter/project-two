@@ -7,7 +7,7 @@
             <div class="card" "width: 18rem;">
                 
                 <div class="card-body">
-                    <h5 class="card-title">Welcome!</h5>
+                    <h5 class="card-title">Welcome, {{user.name}}!</h5>
                     <p class="card-text">Welcome to Game Database, click home button to search for games!</p>
                     
                 </div>
@@ -19,9 +19,11 @@
                     <h3>User Information</h3>
 
                     <hr>
+                    <h5>User name</h5>
+                    <p>{{user.name}}</p>
 
                     <h5> Email :</h5>
-                    <p>{{email}}</p>
+                    <p>{{user.email}}</p>
 
                   
 
