@@ -21,7 +21,7 @@ router.get('/home', async (req, res) => {
         });
         res.render('home', {homePage});
     } catch(error) {
-        res.status(404).send("Almost there!")
+        res.status(404).send("Oops, mongoose ate my homeowork")
     }
 });
 
