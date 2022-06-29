@@ -306,10 +306,11 @@ padding-top: 125px;
 .title {
     font-family: 'Alike Angular', serif;
     font-family: 'Press Start 2P', cursive;
-    font-size: 35px;
+    font-size: 45px;
     color: #ddd;
     position: absolute;
-    left: -40px;
+   right: 250px;
+   top: 80px;
 }
 
 #title-icon {
